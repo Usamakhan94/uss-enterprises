@@ -1,4 +1,5 @@
 "use client";
+import { RxChevronDown } from "react-icons/rx";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -14,10 +15,17 @@ import {
 import { useEffect, useRef, useState } from "react";
 
 const navLinks = [
-  { href: "#hero", label: "Home" },
-  { href: "#about", label: "About us" },
+  {
+    href: "#about",
+    label: "About us",
+    children: [
+      { href: "#Partnerships", label: "Partnerships" },
+      { href: "#team", label: "team" },
+    ],
+  },
   { href: "#services", label: "Services" },
-  { href: "#testimonials", label: "Testimonials" },
+  { href: "#Projects", label: "Projects" },
+  { href: "#Products", label: "Products" },
 ];
 
 const Navbar = () => {
@@ -118,15 +126,31 @@ const Navbar = () => {
             <div className="flex gap-9">
               <ul className="flex gap-9 items-center">
                 {navLinks.map((navItem) => (
-                  <li key={navItem.label}>
+                  <li key={navItem.label} className="relative group">
                     <Link
-                      className={`relative text-nowrap ${
+                      className={`relative text-nowrap flex items-center [&>svg]:hover:rotate-180 transition-all ${
                         pathName === navItem.href ? "text-white" : "text-link"
                       }`}
                       href={`/${navItem.href}`}
                     >
-                      {navItem.label}
+                      {navItem.label} {navItem.children && <RxChevronDown />}
                     </Link>
+                    {navItem.children && (
+                      <div className="flex flex-col gap-4 absolute top-6 left-0 bg-background px-4 py-4 rounded-sm border scale-y-0 group-hover:scale-y-100 transition-all origin-top">
+                        {navItem.children.map((innerNav) => (
+                          <Link
+                            className={`relative text-nowrap hover:translate-x-2 transition-all ${
+                              pathName === innerNav.href
+                                ? "text-white"
+                                : "text-link"
+                            }`}
+                            href={`/${innerNav.href}`}
+                          >
+                            {innerNav.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </li>
                 ))}
               </ul>
