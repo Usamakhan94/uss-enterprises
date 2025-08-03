@@ -139,6 +139,7 @@ const Navbar = () => {
                       <div className="flex flex-col gap-4 absolute top-6 left-0 bg-background px-4 py-4 rounded-sm border scale-y-0 group-hover:scale-y-100 transition-all origin-top">
                         {navItem.children.map((innerNav) => (
                           <Link
+                            key={innerNav.href + 1}
                             className={`relative text-nowrap hover:translate-x-2 transition-all ${
                               pathName === innerNav.href
                                 ? "text-white"
