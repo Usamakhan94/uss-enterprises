@@ -1,3 +1,4 @@
+import Clients from "@/components/section/Home/Clients";
 import ContactUs from "@/components/section/Home/Contact";
 import Experience from "@/components/section/Home/Experience";
 import OurGoal from "@/components/section/Home/Goal";
@@ -15,6 +16,7 @@ export default function Home() {
       <OurGoal />
       <Services />
       <PortfolioSection />
+      <Clients />
       <Experience />
       <Testimonials />
       <ContactUs />

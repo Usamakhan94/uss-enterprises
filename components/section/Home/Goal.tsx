@@ -29,24 +29,48 @@ const OurGoal = () => {
           <div className=" 2xl:pr-16 lg:col-span-1 md:col-span-2">
             <Pills>
               <span className="leading-none text-white font-bold xsm:text-base text-sm">
-                About our Company
+                About USS
               </span>
             </Pills>
-            <h2 className="2xl:text-h2 xl:text-[4.875rem] xsm:text-h3 text-h5 pt-4 xsm:pt-0 font-bold leading-[1.2]">
-              <Transition>Our Goal to</Transition>
-              <Transition>Satisfied Local</Transition>
-              <Transition>& Global Clients</Transition>
+            <h2 className="2xl:text-[54px] xl:text-[4rem] xsm:text-h3 text-h5 pt-4 xsm:pt-0 font-bold leading-[1.2]">
+              <Transition>USS Enterprises is one </Transition>
+              <Transition>of the fastest emerging</Transition>
+              <Transition> IT Solution provider</Transition>
             </h2>
-            <p className="md:max-w-[33.75rem] max-w-[50rem] xsm:py-10 py-6 text-sm xsm:text-body">
-              We transform digital landscapes with innovative web development
-              solutions. Specializing in tailored, high-performance websites and
-              fintech services, we deliver secure payment gateways and
-              comprehensive financial platforms. Our expertise ensures clients
-              stay ahead in modern finance. Partner with{" "}
-              <b className="text-white/70">AVIORSOL</b> to unlock the full
-              potential of your digital strategy and achieve your business
-              goals.
+            <p className="md:max-w-[33.75rem] max-w-[50rem] xsm:pt-10 pt-6 text-sm xsm:text-body">
+              We are serving in IT industry since 2015 with a wide range of our{" "}
+              <b className="text-white/70">Products and Services Portfolio</b>{" "}
+              covering every end to end requirement in IT Infrastructure.
+              {/* </p>
+            <p className="md:max-w-[33.75rem] max-w-[50rem] pt-2 text-sm xsm:text-body"> */}{" "}
+              We believe in working as technology partner and solution provider
+              for our clientele with an experienced and well qualified team of
+              professionals and technology specialists. The key to our success
+              is our Customer Oriented policies, our belief in Consultative
+              Selling and the top of the line Support and Post Sales Services to
+              our valued customers.
             </p>
+            <p className="md:max-w-[33.75rem] max-w-[50rem] pt-2 text-sm xsm:text-body">
+              Our Core values which form the basis of our business operations
+              and our corporate social responsibility, are:
+            </p>
+            <ul className="pt-2 text-[#646a6d]">
+              <li>
+                <b className="text-white">- </b> Committed with dedication.
+              </li>
+              <li>
+                <b className="text-white">- </b>Teamwork & Synchronization.
+              </li>
+              <li>
+                <b className="text-white">- </b>Compliance professionally.
+              </li>
+              <li>
+                <b className="text-white">- </b>Best Recommendations.
+              </li>
+              <li>
+                <b className="text-white">- </b>  Consultancy with Excellency.
+              </li>
+            </ul>
             <div className="flex items-end">
               <Link
                 className="rounded-full xsm:h-[72px] h-[58px] xsm:min-w-[18.75rem] min-w-[17.5rem] relative group"

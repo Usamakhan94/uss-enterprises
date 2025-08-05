@@ -7,11 +7,16 @@ const Vision = () => {
   const content = [
     {
       heading: "Our Mission",
-      details: `Our Mission is to deliver superior web design and development solutions, including bespoke web and app services. We are dedicated to creating elegant, user-focused digital experiences that fulfill our clients' unique objectives with exceptional precision.`,
+      details: `Creating a powerful and valued brand associated to being a trusted corporate 
+strategy consultant that will be synonymous with developing and addressing the 
+business problems of customers through technological change and innovation.
+`,
     },
     {
       heading: "Our Vision",
-      details: `Our Vision is to be the leading provider of innovative web design and development solutions. We aspire to set new industry standards by delivering exceptional, user-centric digital experiences that drive progress and elevate our clients' success globally.`,
+      details: `Our vision is simple to be an effective value-added technology partner trusted by 
+its clients through our consultative selling, support and services for their every
+exploration with innovations.`,
     },
     {
       heading: "Our Goal",
